@@ -103,7 +103,7 @@ int main(){
 	// flush console after each outputted char
 	setbuf(stdout,NULL);
 
-	xenos_init(VIDEO_MODE_AUTO);
+	xenos_init(VIDEO_MODE_PAL60);
 
 	printf("ANA Dump after Init:\n");
 	dumpana();
@@ -121,7 +121,7 @@ int main(){
 
 	printf("\nXeLL - Xenon linux loader second stage " LONGVERSION "\n");
     printf("\nBuilt with GCC " GCC_VERSION " and Binutils " BINUTILS_VERSION " \n");
-	do_asciiart();
+	//do_asciiart();
 
 	//delay(3); //give the user a chance to see our splash screen <- network init should last long enough...
 	
